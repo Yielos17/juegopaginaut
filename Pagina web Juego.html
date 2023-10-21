@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Juego página</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Gris claro */
+        }
+
+        h1 {
+            text-align: center; /* Para centrar el texto */
+            font-style: italic; /* Estilo de letra en cursiva */
+            font-weight: bold; /* Texto en negritas */
+            font-size: 28px; /* Aumentar el tamaño de letra en 2 puntos */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        p {
+            text-align: center; /* Para centrar los párrafos */
+        }
+
+        ul {
+            border-top: 2px solid #000; /* Línea divisoria para la lista desordenada */
+        }
+
+        li {
+            list-style-type: disc; /* Usar viñetas en lugar de puntos */
+        }
+
+        a {
+            display: block; /* Hace que el enlace sea un bloque para poder centrarlo */
+            text-align: center; /* Centra el texto del enlace */
+            background-color: #000; /* Relleno negro */
+            color: #fff; /* Texto en blanco */
+            padding: 10px; /* Agrega espaciado interior para que el recuadro sea más visible */
+            text-decoration: none; /* Quita el subrayado del enlace */
+        }
+    </style>
+</head>
+<body>
+    <h1>El Nuevo Juego</h1>
+    <p style="color: navy">Conoce lo nuevo, conoce nuestro proyecto</p>
+    <img src="https://www.pandasecurity.com/es/mediacenter/src/uploads/2015/07/game-boy.jpg" alt="Imagen del juego">
+
+    <p>Somos un pequeño equipo de desarrollo formado para crear una página para nuestro nuevo juego, que podrás descargar a través del siguiente enlace:</p>
+
+    <a href="http://tu-sitio-de-descarga.com"><h4>Página de Descarga</h4></a>
+
+    
+    <ul>
+        <h2>Desarrolladores</h2>
+        <br>
+        <li>Irving Yael Perez Martinez</li>
+        <li>Fernanda Hinojosa Simón</li>
+        <li>Isidro Raziel Hernandez Silva</li>
+        <li>Oscar Ricardo Balderas</li>
+    </ul>
+    <br>
+    <br>
+    <hr>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            margin: 50px auto;
+            padding: 20px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+        }
+    </style>
+<body>
+    <form id="loginForm">
+        <h2>Iniciar Sesión</h2>
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required><br><br>
+        <input type="submit" value="Iniciar Sesión">
+    </form>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            var usuario = document.getElementById("usuario").value;
+            var contrasena = document.getElementById("contrasena").value;
+
+            if (usuario === "0001" && contrasena === "0001") {
+                // Redirigir al enlace de YouTube
+                window.location.href = "https://www.youtube.com/watch?v=uYSqjUuOBmY";
+            } else {
+                alert("Credenciales incorrectas. Por favor, intenta de nuevo.");
+            }
+        });
+    </script>
+
+    <!-- Agrega el archivo JavaScript externo -->
+    <script src="main.js"></script>
+</body>
+</html>
